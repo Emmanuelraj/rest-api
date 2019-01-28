@@ -1,0 +1,49 @@
+<html>
+  <head>
+                <!--import the boostrap CDN-->
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+                <!--jquery CDN--->
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+
+
+  <head>
+  <body>
+
+
+            <%=title%>
+
+
+            <%include partials/headernav.ejs%>
+
+
+
+      <form action ="/api/edit/<%=books._id%>" method ="post">
+         <table>
+           <ul>
+          <br>
+           <td>
+           <tr><label for ="title">title</label></tr>
+          <tr><input type="text" name="title" id ="title"></input></tr>
+           </td>
+         </br>
+        <br>
+          <td>
+           <tr><label for ="author">Author</label></tr>
+           <tr><input type="text" name="author" id ="Author"></input></tr>
+         </td>
+           </br>
+        <br>
+           <label for ="body">Body</label>
+            <input type="text" name="body" id ="body"></input>
+         </br>
+        </ul>
+
+          <input type ="submit" value="submit"/>
+       </form>
+
+
+  </body>
+
+</html>
