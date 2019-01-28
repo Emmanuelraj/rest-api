@@ -12,4 +12,10 @@ node rest api
         nodemon
         
 # Deploy
-          Herokuke
+          Heroku https://afternoon-reaches-71615.herokuapp.com/api/findAll  --> findAll
+                 https://afternoon-reaches-71615.herokuapp.com/api/addBooks  --> addBooks GET/POST
+                 https://afternoon-reaches-71615.herokuapp.com/api/edit/:id   --> editById  POST
+                 https://afternoon-reaches-71615.herokuapp.com/api/findById/:id  -> GET findById
+                  
+               
+                   
